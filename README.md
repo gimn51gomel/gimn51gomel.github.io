@@ -1,1 +1,0 @@
-# gimn51gomel-public
