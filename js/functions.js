@@ -1,11 +1,3 @@
-/**
-* Eduport- LMS, Education and Course Theme
-*
-* @author Webestica (https://www.webestica.com/)
-* @version 1.3.0
-**/
-
-
 /* ===================
 Table Of Content
 ======================
@@ -110,7 +102,6 @@ var e = {
         e.stepper(),
         e.videoPlyr(),
         e.darkMode(),
-        e.pricing(),
         e.stickyElement(),
         e.overlayScrollbars();
         
@@ -992,21 +983,13 @@ var e = {
 
         var changeThemeToDark = () => {
           document.documentElement.setAttribute("data-theme", "dark") // set theme to dark
-          if(dir == 'rtl') {
-              style.setAttribute('href', '/css/style-dark-rtl.css');
-          } else {
-              style.setAttribute('href', '/css/style-dark.css');
-          }
+          style.setAttribute('href', '/css/style-dark.css');
           localStorage.setItem("data-theme", "dark") // save theme to local storage
         }
 
         var changeThemeToLight = () => {
           document.documentElement.setAttribute("data-theme", "light") // set theme light
-          if(dir == 'rtl') {
-              style.setAttribute('href', '/css/style-rtl.css');
-          } else {
-              style.setAttribute('href', '/css/style.css');
-          }
+          style.setAttribute('href', '/css/style.css');
           
           localStorage.setItem("data-theme", 'light') // save theme to local storage
         }
@@ -1030,34 +1013,6 @@ var e = {
         }
     },
     // END: Dark mode
-
-    // START: 25 Pricing
-    pricing: function () {
-        var p = e.select('.price-wrap');
-        if (e.isVariableDefined(p)) {
-          var pWrap = e.selectAll(".price-wrap");
-          pWrap.forEach(item => {
-
-            var priceSwitch = item.querySelector('.price-toggle'),
-            priceElement = item.querySelectorAll('.plan-price');
-
-            priceSwitch.addEventListener('change', function () {
-              if (priceSwitch.checked) {
-                priceElement.forEach(pItem => {
-                  var dd = pItem.getAttribute('data-annual-price');
-                  pItem.innerHTML = dd;
-                });
-              } else {
-                priceElement.forEach(pItem => {
-                  var ee = pItem.getAttribute('data-monthly-price');
-                  pItem.innerHTML = ee;
-                });
-              }
-            });
-          });
-        }
-    },
-    // END: Pricing
 
     // START: 26 Sticky element
     stickyElement: function () {

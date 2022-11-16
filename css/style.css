@@ -455,14 +455,6 @@ legend + * {
   -webkit-appearance: textfield;
 }
 
-/* rtl:raw:
-[type="tel"],
-[type="url"],
-[type="email"],
-[type="number"] {
-  direction: ltr;
-}
-*/
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -19126,7 +19118,7 @@ textarea.form-control-lg {
     z-index: 1100 !important;
   }
   .navbar-expand-sm .navbar-brand .navbar-brand-item {
-    height: 36px;
+    height: 46px;
     display: block;
     width: auto;
   }
@@ -19699,7 +19691,6 @@ textarea.form-control-lg {
     z-index: 1100 !important;
   }
   .navbar-expand-xl .navbar-brand .navbar-brand-item {
-    height: 56px;
     display: block;
     width: auto;
   }
@@ -22791,5 +22782,8 @@ html[dir=rtl] .choices__input {
   stroke: #747579;
 }
 
+footer {
+  background-color:rgba(200, 200, 200);
+}
 /*User CSS*/
 /*# sourceMappingURL=style.css.map */

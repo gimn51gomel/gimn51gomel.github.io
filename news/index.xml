@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Гимназия 51</title>
+    <link>http://example.org/news/</link>
+    <description>Recent content in News on Гимназия 51</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-RU</language>
+    <lastBuildDate>Tue, 08 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Торжественная церемония, посвящённая началу II четверти 2022/2023 учебного года</title>
+      <link>http://example.org/news/2022-11-08-second_quater/</link>
+      <pubDate>Tue, 08 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/news/2022-11-08-second_quater/</guid>
+      <description>В гимназии состоялась торжественная церемония, посвящённая началу II четверти. Директор гимназии А.П.Пахучий вручил награды учащимся гимназии победителям и призёрам I этапа Республиканской олимпиады по учебным предметам. Поздравил всех с началом II четверти и пожелал успехов в достижении поставленных целей!</description>
+    </item>
+    
+  </channel>
+</rss>

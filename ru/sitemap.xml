@@ -2,58 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/ru/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="by"
-                href="http://example.org/by/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://example.org/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="http://example.org/ru/categories/"
-                />
+    <loc>http://example.org/galleries/</loc>
+    <lastmod>2022-11-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/ru/education/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="by"
-                href="http://example.org/by/education/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://example.org/education/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="http://example.org/ru/education/"
-                />
+    <loc>http://example.org/news/</loc>
+    <lastmod>2022-11-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/ru/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="by"
-                href="http://example.org/by/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://example.org/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="http://example.org/ru/tags/"
-                />
-  </url><url>
-    <loc>http://example.org/ru/</loc>
+    <loc>http://example.org/</loc>
+    <lastmod>2022-11-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="by"
@@ -62,15 +18,89 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/"
+                href="http://example.org/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://example.org/ru/"
+                href="http://example.org/"
                 />
   </url><url>
-    <loc>http://example.org/ru/education/bellschedule/</loc>
+    <loc>http://example.org/news/2022-11-08-second_quater/</loc>
+    <lastmod>2022-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/galleries/2022-11-08-second_quater.ru/</loc>
+    <lastmod>2022-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="by"
+                href="http://example.org/by/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="http://example.org/categories/"
+                />
+  </url><url>
+    <loc>http://example.org/education/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="by"
+                href="http://example.org/by/education/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/en/education/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="http://example.org/education/"
+                />
+  </url><url>
+    <loc>http://example.org/metodical/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="by"
+                href="http://example.org/by/metodical/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/en/metodical/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="http://example.org/metodical/"
+                />
+  </url><url>
+    <loc>http://example.org/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="by"
+                href="http://example.org/by/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="http://example.org/tags/"
+                />
+  </url><url>
+    <loc>http://example.org/education/bellschedule/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="by"
@@ -79,12 +109,29 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/education/bellschedule/"
+                href="http://example.org/en/education/bellschedule/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://example.org/ru/education/bellschedule/"
+                href="http://example.org/education/bellschedule/"
+                />
+  </url><url>
+    <loc>http://example.org/metodical/goals_and_objectives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="by"
+                href="http://example.org/by/metodical/goals_and_objectives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/en/metodical/goals_and_objectives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="http://example.org/metodical/goals_and_objectives/"
                 />
   </url>
 </urlset>

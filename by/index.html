@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us"><meta charset="utf-8">
+<html lang="ru-RU"><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>Гiмназiя 51</title>
 <meta name="viewport" content="width=device-width,minimum-scale=1">
@@ -15,19 +15,19 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 <link rel="stylesheet" type="text/css" href="/vendor/glightbox/dist/css/glightbox.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+<link id="style-switch" rel="stylesheet" type="text/css" href="/css/style-main.css">
 
-<link id="style-switch" rel="stylesheet" type="text/css" href="/css/style.css">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"><body>    
+<body>    
     <header class="navbar-light navbar-sticky header-static">
         
         <nav class="navbar navbar-expand-xl">
             <div class="container-fluid px-3 px-xl-5">
                 
                 <a class="navbar-brand" href="index.html">
-                    <img class="light-mode-item navbar-brand-item" src="images/logo.png" alt="logo">
-                    <img class="dark-mode-item navbar-brand-item" src="images/logo-light.png" alt="logo">
+                    <img class="light-mode-item navbar-brand-item" src="/images/logo-text.png" alt="logo">
+                    <img class="dark-mode-item navbar-brand-item" src="/images/logo-text-light.png" alt="logo">
                 </a>
                 
     
@@ -48,16 +48,25 @@
                         
                         
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Образовательня работа</a>
+                            <a class="nav-link dropdown-toggle active" href="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Образовательня праца</a>
                             <ul class="dropdown-menu" aria-labelledby="demoMenu">
                                 
-                                <li> <a class="dropdown-item" href="/by/education/bellschedule/">Расклад званкоў</a></li>
+                                <li>fa-light fa-bell-school<a class="dropdown-item" href="/by/education/bellschedule/">Расклад званкоў</a></li>
                                 
                             </ul>
                         </li>
                         
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Методитческая работа</a>
+                            <a class="nav-link dropdown-toggle active" href="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Метадичная праца</a>
+                            <ul class="dropdown-menu" aria-labelledby="demoMenu">
+                                
+                                <li><a class="dropdown-item" href="/by/metodical/goals_and_objectives/">Мэты і задачы гімназіі&#34;</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Воспитание и идеология</a>
                             <ul class="dropdown-menu" aria-labelledby="demoMenu">
                                 
                             </ul>
@@ -70,28 +79,27 @@
                                 <i class="fas fa-ellipsis-h"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end min-w-auto" data-bs-popper="none">
-                                <li> 
-                                    <a class="dropdown-item" href="https://support.webestica.com/" target="_blank">
-                                        <i class="text-warning fa-fw bi bi-life-preserver me-2"></i>Support
-                                    </a> 
-                                </li>
+                                
                             </ul>
                         </li>
                     </ul>
                     
-    
-                    
-                    <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
-                        <div class="nav-item w-100">
-                            <form class="position-relative">
-                                <input class="form-control pe-5 bg-transparent" type="search" placeholder="Search" aria-label="Search">
-                                <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
-                                    <i class="fas fa-search fs-6 "></i>
-                                </button>
-                            </form>
-                        </div>
+                    <div class="dropdown nav me-4">
+                        <a class="dropdown-toggle nav-link" href="#" role="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe me-2"></i>Language
+                        </a>
+                        <ul class="dropdown-menu min-w-auto" aria-labelledby="languageSwitcher">
+                            
+                            <li><a class="dropdown-item me-4" href="http://example.org/">Русский</a></li>
+                            
+                            <li><a class="dropdown-item me-4" href="http://example.org/by/">Беларуская</a></li>
+                            
+                            <li><a class="dropdown-item me-4" href="http://example.org/en/">English</a></li>
+                            
+                        </ul>
                     </div>
-                    
+
+                    <a href="#" class="btn btn-lg btn-danger-soft me-4 mb-4 mb-sm-0"><i class="fas fa-universal-access me-2"></i>Для слабовидящих</a>
 
                     <div class="ms-1 ms-lg-0">
                         <div class="modeswitch-wrap" id="darkModeSwitch">
@@ -225,14 +233,6 @@
         
     
         
-        <figure class="position-absolute top-0 start-0 ms-5">
-            <svg class="fill-orange opacity-4" width="29px" height="29px">
-                <path d="M29.004,14.502 C29.004,22.512 22.511,29.004 14.502,29.004 C6.492,29.004 -0.001,22.512 -0.001,14.502 C-0.001,6.492 6.492,-0.001 14.502,-0.001 C22.511,-0.001 29.004,6.492 29.004,14.502 Z"></path>
-            </svg>
-        </figure>
-        
-    
-        
         <div class="container">
             
             <div class="row align-items-center g-5">
@@ -256,7 +256,7 @@
                             
                             <span class="position-absolute top-50 start-50 translate-middle ms-3 z-index-n1">
                                 <svg width="300px" height="62.1px" enable-background="new 0 0 366 62.1" viewBox="0 0 366 62.1" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="fill-warning" d="m322.5 25.3c0 1.4 2.9 0.8 3.1 1.6 0.8 1.1-1.1 1.3-0.6 2.4 13.3 0.9 26.9 1.7 40.2 4-2.5 0.7-4.9 1.6-7.3 1.1-4-0.9-8.2-1-12.2-1.2-8.5-0.5-16.9-1.9-25.5-1.7h-3.1c2.6 0.6 4.8 0.4 5.7 2.2-7.3 0.4-14.1-0.8-21.2-1.1-0.2 0.6-0.5 1.2-0.8 1.8 21.3 0.7 42.5 1.6 64.3 4.6-4.2 1.6-7.7 1-10.8 0.8-6.8-0.5-13.5-1.3-20.3-1.9-0.9-0.1-2.3-0.1-2.9 0.2-2.2 1.6-4.3 0.6-7 0.4 1.4-1 2.5 0.5 3.9-0.8-5.6-1-10.7 0.6-15.9 0s-10.5-0.6-16.6-0.8c2 1.6 4.6 1.3 6.2 1.4 4.9 0 9.9 0.8 14.8 0.7 5.3-0.1 10.4 0.5 15.5 0.9 3.2 0.3 6.7-0.1 9.9-0.4 1.1-0.1 0.5 0.3 0.6 0.6 0.5 0.9 2.2 0.8 3.6 0.8 5.1-0.1 10.1 0.6 14.8 1.5 0.8 0.1 1.5 0 1.7 0.7 0 0.7-0.8 0.6-1.5 0.8-3.9 1.2-7.4-0.2-11.1-0.2-2 0-4.3-1.5-6 0.5-0.3 0.4-1.4 0.1-2.2-0.1-4.5-0.8-9.1-0.5-13.8-1.5-2.3-0.5-5.6 0.1-8.4 0.5-4 0.5-8-0.7-12.1-0.9-3.4-0.2-7.1-0.5-10.5-0.7-7.1-0.3-14.2-1.2-22.3-0.4 4.9 1.1 9.4 1.2 13.8 1.2 9.7 0 19.2 2.3 28.9 1.6 7.3 3.2 15.9 1.5 23.8 2.9 4.9 0.8 10.1 0.8 15.2 1.2 0.5 0 0.8 0.3 1.1 0.9-20-2.1-40.2-1.4-60.8-3 4.9 2.1 10.8-0.3 15.3 2.7-8 1.9-15.8-0.9-23.5-0.1 2.8 1.4 7.1 1.1 9.3 3.3 0.5 0.5 0.2 1.1-1.2 1.3 2.3 1 3.4-2.1 5.7-0.4 0.2-0.6 0.2-1 0.3-1.5 0.8-0.3 2 0.8 1.5 1.5-0.2 0.1 0 0.3 0 0.5 18.7 0.4 37.3 1.7 56.2 3.6-1.7 1.1-2.8 1.2-4.2 1.1-7.1-0.5-14.1-0.9-21.2-1.4-3.1-0.2-6.3-0.4-9.4-0.4-7.6-0.2-15-0.7-22.4-1-9-0.4-17.9-0.1-26.9-0.1-1.2 0-2.9-0.4-3.9 1 14.8 0.3 29.7 0.6 44.4 1.1 14.8 0.6 29.9 1.3 44.2 4.2-4.3 1-8.8 0.9-13 0.5-5.3-0.5-10.5-1.1-15.8-1.2-11.4-0.3-22.9-0.9-34.3-1.2-17.6-0.4-35.4-0.3-53.1-0.4-10.8-0.1-21.7-0.2-32.5 0-17.8 0.4-35.7 0.2-53.5 0.5-13.1 0.3-26.3 0.1-39.4 0.5-11.1 0.3-22.4 0.6-33.6 1-13.1 0.6-26.1 0.2-39.3 0.4-3.9 0.1-7.6 0.2-11.8-0.2 0.9-1.2 2.3-1.3 3.9-1.3 8.4 0.2 16.6-0.4 24.9-0.9 3.9-0.2 7.9-0.4 11.9 0.2 2.5 0.4 5.3-0.3 8-0.4 7.3-0.4 14.7-0.7 22-0.9 11.9-0.5 23.7-1.2 35.6-0.8 7.7 0.2 15.3-0.6 22.9-0.1 2.3 0.2 4.3-0.5 6.5-1h-17.6c-9.6 0-19-0.1-28.6 0-8 0.1-16.1 0.3-24 0.8-2.6 0.2-5.4 0.1-8.2 0.1-10.1 0.3-20.1 0.6-30.2 0.5-5.4 0-10.7-0.1-15.9 0.6-2.3 0.3-4-1.3-6.5-0.6 0.2 0.4 0.5 0.9 0.6 1.5-1.9 0-4 0.4-4.9-0.1-4.2-2.2-9.4-1.5-14.1-2.3-1.7-0.3-3.7-0.1-4.3-1.5-0.5-1.3 1.9-1.5 2.6-2.6-4.2-1.4-4.6-5-8.5-7.2-1.5 0.2-0.9 2.8-4.2 1.3 0.3 2.4 4.5 3.9 2.8 6.4-2.3 0.3-3.2-0.8-4.2-1.7-2.5-4-5.1-8.4-5.1-12.7 0.2-6.8 0.2-13.8 3.6-20.4 0.3-0.5 0.3-1 0.8-1.4 0.9-0.9 1.2-2.4 3.6-2.1 2.2 0.2 2.5 1.5 2.6 2.6 0.2 1.4 1.5 1.8 3.2 2.5 0.9-1.4 0.5-2.9 2.6-3.7 0.2-0.1 0.3-0.4 0.3-0.4-3.1-2.2 1.2-2.2 2.3-3.3-3.1-1.8-4-4.3-3.7-7-1.5-0.3-3.1-0.4-4.5 0-1.7 0.6-2.2-0.5-2.9-1 0.6-0.5 0.8-1.1 2.2-1.3 7.6-0.9 15.2-1.7 22.9-2 20-0.7 39.9-0.9 59.9-1 11.9-0.1 23.8 0.4 35.6 1.1 3.6 0.2 7.1-0.9 10.7-0.5 7.9 0.9 15.8 0.3 23.8 0.5 7.3 0.1 14.4-0.6 21.7-0.1 12.2 0.9 24.4 0.3 36.7 0.6 9.4 0.3 18.9 0.4 28.2 1 11.9 0.7 23.8 1.3 35.6 2 11.1 0.6 22.4 0.5 33.3 2 7.1 1 14.4 1.1 21.3 2.4 4 0.7 8.2 1.6 12.4 1.9 2.2 0.2 0.9 1 1.5 1.5-4-0.8-8-0.8-12.1-1.4-4.3-0.7-8.5-1-12.8 0.4-2.9 1-6.3 0.2-9.3-0.1-10.2-1.1-20.6-1.6-30.8-2.4-12.1-0.9-24.3-1.4-36.4-2.1-9.9-0.6-20-0.5-29.9-1-11.4-0.6-22.7 0-34.2-0.5-6.3-0.3-12.3-0.3-18.5-0.4-4.2-0.1-8.4 1.3-12.8 0.3 0.6 0.2 1.2 0.7 1.9 0.7 10.5 0 20.9 1.9 31.6 1.7 6.5-0.1 13.1 0.2 19.8 0.8 3.2 0.3 6.3-0.4 9.7-0.1 7.6 0.7 15.5 0.5 23 0.8 12.4 0.5 24.7 0.4 37.1 1.1 13.3 0.7 26.8 2.1 39.9 4.1 6.2 0.9 12.7 1.5 19.2 1.7 0.6 0 1.1 0.1 1.5 0.5-4.6 0.1-9.3 0-13.9-0.5-0.6 1.1 1.4 0.9 1.5 1.9-9.7 1.6-19.6-1.4-29.4-0.1 2.2 1.4 5.1 1 7.4 1 7.3 0.1 14.1 1.3 21.2 1.9 2.8 0.3 5.9 0 8.5 0.8 1.5 0.5 4.6-1.1 4.9 1.3 4-0.7 7.3 1.5 11.1 1.2 4-0.3 7.7 0.6 11.6 1.1 0.8 0.1 2.2 0.3 2.3 1.1 0.2 1-1.1 1.2-2 1.5-3.4 1-6.7-0.4-10.1-0.4-0.9 0-2-0.2-2.9-0.2-9.4 0.1-18.8-1.3-28.3-1.8-6-0.4-12.1-0.9-18.1-1.3 0 0.2 0 0.4-0.2 0.6 6.1 0.5 12.1 1.4 18.3 0.7z"></path>
+                                    <path class="fill-success" d="m322.5 25.3c0 1.4 2.9 0.8 3.1 1.6 0.8 1.1-1.1 1.3-0.6 2.4 13.3 0.9 26.9 1.7 40.2 4-2.5 0.7-4.9 1.6-7.3 1.1-4-0.9-8.2-1-12.2-1.2-8.5-0.5-16.9-1.9-25.5-1.7h-3.1c2.6 0.6 4.8 0.4 5.7 2.2-7.3 0.4-14.1-0.8-21.2-1.1-0.2 0.6-0.5 1.2-0.8 1.8 21.3 0.7 42.5 1.6 64.3 4.6-4.2 1.6-7.7 1-10.8 0.8-6.8-0.5-13.5-1.3-20.3-1.9-0.9-0.1-2.3-0.1-2.9 0.2-2.2 1.6-4.3 0.6-7 0.4 1.4-1 2.5 0.5 3.9-0.8-5.6-1-10.7 0.6-15.9 0s-10.5-0.6-16.6-0.8c2 1.6 4.6 1.3 6.2 1.4 4.9 0 9.9 0.8 14.8 0.7 5.3-0.1 10.4 0.5 15.5 0.9 3.2 0.3 6.7-0.1 9.9-0.4 1.1-0.1 0.5 0.3 0.6 0.6 0.5 0.9 2.2 0.8 3.6 0.8 5.1-0.1 10.1 0.6 14.8 1.5 0.8 0.1 1.5 0 1.7 0.7 0 0.7-0.8 0.6-1.5 0.8-3.9 1.2-7.4-0.2-11.1-0.2-2 0-4.3-1.5-6 0.5-0.3 0.4-1.4 0.1-2.2-0.1-4.5-0.8-9.1-0.5-13.8-1.5-2.3-0.5-5.6 0.1-8.4 0.5-4 0.5-8-0.7-12.1-0.9-3.4-0.2-7.1-0.5-10.5-0.7-7.1-0.3-14.2-1.2-22.3-0.4 4.9 1.1 9.4 1.2 13.8 1.2 9.7 0 19.2 2.3 28.9 1.6 7.3 3.2 15.9 1.5 23.8 2.9 4.9 0.8 10.1 0.8 15.2 1.2 0.5 0 0.8 0.3 1.1 0.9-20-2.1-40.2-1.4-60.8-3 4.9 2.1 10.8-0.3 15.3 2.7-8 1.9-15.8-0.9-23.5-0.1 2.8 1.4 7.1 1.1 9.3 3.3 0.5 0.5 0.2 1.1-1.2 1.3 2.3 1 3.4-2.1 5.7-0.4 0.2-0.6 0.2-1 0.3-1.5 0.8-0.3 2 0.8 1.5 1.5-0.2 0.1 0 0.3 0 0.5 18.7 0.4 37.3 1.7 56.2 3.6-1.7 1.1-2.8 1.2-4.2 1.1-7.1-0.5-14.1-0.9-21.2-1.4-3.1-0.2-6.3-0.4-9.4-0.4-7.6-0.2-15-0.7-22.4-1-9-0.4-17.9-0.1-26.9-0.1-1.2 0-2.9-0.4-3.9 1 14.8 0.3 29.7 0.6 44.4 1.1 14.8 0.6 29.9 1.3 44.2 4.2-4.3 1-8.8 0.9-13 0.5-5.3-0.5-10.5-1.1-15.8-1.2-11.4-0.3-22.9-0.9-34.3-1.2-17.6-0.4-35.4-0.3-53.1-0.4-10.8-0.1-21.7-0.2-32.5 0-17.8 0.4-35.7 0.2-53.5 0.5-13.1 0.3-26.3 0.1-39.4 0.5-11.1 0.3-22.4 0.6-33.6 1-13.1 0.6-26.1 0.2-39.3 0.4-3.9 0.1-7.6 0.2-11.8-0.2 0.9-1.2 2.3-1.3 3.9-1.3 8.4 0.2 16.6-0.4 24.9-0.9 3.9-0.2 7.9-0.4 11.9 0.2 2.5 0.4 5.3-0.3 8-0.4 7.3-0.4 14.7-0.7 22-0.9 11.9-0.5 23.7-1.2 35.6-0.8 7.7 0.2 15.3-0.6 22.9-0.1 2.3 0.2 4.3-0.5 6.5-1h-17.6c-9.6 0-19-0.1-28.6 0-8 0.1-16.1 0.3-24 0.8-2.6 0.2-5.4 0.1-8.2 0.1-10.1 0.3-20.1 0.6-30.2 0.5-5.4 0-10.7-0.1-15.9 0.6-2.3 0.3-4-1.3-6.5-0.6 0.2 0.4 0.5 0.9 0.6 1.5-1.9 0-4 0.4-4.9-0.1-4.2-2.2-9.4-1.5-14.1-2.3-1.7-0.3-3.7-0.1-4.3-1.5-0.5-1.3 1.9-1.5 2.6-2.6-4.2-1.4-4.6-5-8.5-7.2-1.5 0.2-0.9 2.8-4.2 1.3 0.3 2.4 4.5 3.9 2.8 6.4-2.3 0.3-3.2-0.8-4.2-1.7-2.5-4-5.1-8.4-5.1-12.7 0.2-6.8 0.2-13.8 3.6-20.4 0.3-0.5 0.3-1 0.8-1.4 0.9-0.9 1.2-2.4 3.6-2.1 2.2 0.2 2.5 1.5 2.6 2.6 0.2 1.4 1.5 1.8 3.2 2.5 0.9-1.4 0.5-2.9 2.6-3.7 0.2-0.1 0.3-0.4 0.3-0.4-3.1-2.2 1.2-2.2 2.3-3.3-3.1-1.8-4-4.3-3.7-7-1.5-0.3-3.1-0.4-4.5 0-1.7 0.6-2.2-0.5-2.9-1 0.6-0.5 0.8-1.1 2.2-1.3 7.6-0.9 15.2-1.7 22.9-2 20-0.7 39.9-0.9 59.9-1 11.9-0.1 23.8 0.4 35.6 1.1 3.6 0.2 7.1-0.9 10.7-0.5 7.9 0.9 15.8 0.3 23.8 0.5 7.3 0.1 14.4-0.6 21.7-0.1 12.2 0.9 24.4 0.3 36.7 0.6 9.4 0.3 18.9 0.4 28.2 1 11.9 0.7 23.8 1.3 35.6 2 11.1 0.6 22.4 0.5 33.3 2 7.1 1 14.4 1.1 21.3 2.4 4 0.7 8.2 1.6 12.4 1.9 2.2 0.2 0.9 1 1.5 1.5-4-0.8-8-0.8-12.1-1.4-4.3-0.7-8.5-1-12.8 0.4-2.9 1-6.3 0.2-9.3-0.1-10.2-1.1-20.6-1.6-30.8-2.4-12.1-0.9-24.3-1.4-36.4-2.1-9.9-0.6-20-0.5-29.9-1-11.4-0.6-22.7 0-34.2-0.5-6.3-0.3-12.3-0.3-18.5-0.4-4.2-0.1-8.4 1.3-12.8 0.3 0.6 0.2 1.2 0.7 1.9 0.7 10.5 0 20.9 1.9 31.6 1.7 6.5-0.1 13.1 0.2 19.8 0.8 3.2 0.3 6.3-0.4 9.7-0.1 7.6 0.7 15.5 0.5 23 0.8 12.4 0.5 24.7 0.4 37.1 1.1 13.3 0.7 26.8 2.1 39.9 4.1 6.2 0.9 12.7 1.5 19.2 1.7 0.6 0 1.1 0.1 1.5 0.5-4.6 0.1-9.3 0-13.9-0.5-0.6 1.1 1.4 0.9 1.5 1.9-9.7 1.6-19.6-1.4-29.4-0.1 2.2 1.4 5.1 1 7.4 1 7.3 0.1 14.1 1.3 21.2 1.9 2.8 0.3 5.9 0 8.5 0.8 1.5 0.5 4.6-1.1 4.9 1.3 4-0.7 7.3 1.5 11.1 1.2 4-0.3 7.7 0.6 11.6 1.1 0.8 0.1 2.2 0.3 2.3 1.1 0.2 1-1.1 1.2-2 1.5-3.4 1-6.7-0.4-10.1-0.4-0.9 0-2-0.2-2.9-0.2-9.4 0.1-18.8-1.3-28.3-1.8-6-0.4-12.1-0.9-18.1-1.3 0 0.2 0 0.4-0.2 0.6 6.1 0.5 12.1 1.4 18.3 0.7z"></path>
                                 </svg>
                             </span>
                             
@@ -269,8 +269,6 @@
 
     
                     <div class="d-sm-flex align-items-center justify-content-center justify-content-lg-start">
-                        
-                        <a href="#" class="btn btn-lg btn-danger-soft me-2 mb-4 mb-sm-0">Начнем</a>
                         
                         <div class="d-flex align-items-center justify-content-center py-2 ms-0 ms-sm-4">
                             <a data-glightbox="" data-gallery="office-tour" href="https://www.youtube.com/watch?v=pdR_OFid8tc" class="btn btn-round btn-primary-shadow mb-0 overflow-visible me-7"> 
@@ -320,7 +318,7 @@
     
                     
                     <div class="position-relative">
-                        <img src="images/puple.png" alt="">
+                        <img src="/images/puple.png" alt="">
                     </div>
                 </div>
                 
@@ -337,26 +335,25 @@
                 
                 <div class="col-sm-6 col-xl-3">
                     <div class="d-flex justify-content-center align-items-center p-4 bg-warning bg-opacity-15 rounded-3">
-                        <span class="display-6 lh-1 text-warning mb-0"><i class="fas fa-tv"></i></span>
+                        <span class="display-6 lh-1 text-warning mb-0"><i class="fas fa-trophy"></i></span>
                         <div class="ms-4 h6 fw-normal mb-0">
                             <div class="d-flex">
                                 <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="10" data-purecounter-delay="200" data-purecounter-duration="0">7</h5>
-                                <span class="mb-0 h5">&nbsp;раз</span>
                             </div>
-                            <p class="mb-0">лучшие учреждением образования города Гомеля</p>
+                            <p class="mb-0">раз звание лучшего учреждения образования города Гомеля</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-sm-6 col-xl-3">
                     <div class="d-flex justify-content-center align-items-center p-4 bg-blue bg-opacity-10 rounded-3">
-                        <span class="display-6 lh-1 text-blue mb-0"><i class="fas fa-user-tie"></i></span>
+                        <span class="display-6 lh-1 text-blue mb-0"><i class="fas fa-certificate"></i></span>
                         <div class="ms-4 h6 fw-normal mb-0">
                             <div class="d-flex">
-                                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="200" data-purecounter-delay="200" data-purecounter-duration="0">2000</h5>
+                                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-delay="100" data-purecounter-duration="0">2000</h5>
                                 <span class="mb-0 h5">+</span>
                             </div>
-                            <p class="mb-0">дипломов на республиканских и областных олимпиадах</p>
+                            <p class="mb-0">завоевано дипломов учащимися гимназии на республиканских и областных олимпиадах</p>
                         </div>
                     </div>
                 </div>
@@ -366,10 +363,9 @@
                         <span class="display-6 lh-1 text-purple mb-0"><i class="fas fa-user-graduate"></i></span>
                         <div class="ms-4 h6 fw-normal mb-0">
                             <div class="d-flex">
-                                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="60" data-purecounter-delay="200" data-purecounter-duration="0">60</h5>
-                                <span class="mb-0 h5">K+</span>
+                                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="8" data-purecounter-delay="2" data-purecounter-duration="0">8</h5>
                             </div>
-                            <p class="mb-0">Online Students</p>
+                            <p class="mb-0">выпускников получили 100-бальные сертификаты на централизованном тестировании</p>
                         </div>
                     </div>
                 </div>
@@ -379,10 +375,10 @@
                         <span class="display-6 lh-1 text-info mb-0"><i class="bi bi-patch-check-fill"></i></span>
                         <div class="ms-4 h6 fw-normal mb-0">
                             <div class="d-flex">
-                                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="6" data-purecounter-delay="300" data-purecounter-duration="0">6</h5>
-                                <span class="mb-0 h5">K+</span>
+                                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="6" data-purecounter-delay="1" data-purecounter-duration="0">16</h5>
+                                <span class="mb-0 h5">&nbsp;дипломов</span>
                             </div>
-                            <p class="mb-0">Certified Courses</p>
+                            <p class="mb-0">на республиканском конкурсе работ исследовательского характера</p>
                         </div>
                     </div>
                 </div>
@@ -390,7 +386,42 @@
         </div>
     </section>
     
+
+    <section class="pt-0 pt-md-5">
+        <div class="container">
+            
+            <div class="row mb-3 mb-sm-4">
+                <div class="col-12 mx-auto text-center">
+                    <h2 class="h1"><a href="/news">Новости</a></h2>
+                </div>
+            </div>
     
+            <div class="row g-4 justify-content-between">
+                
+                    
+
+            </div> 
+        </div>
+    </section>
+    
+
+    <section class="pt-0 pt-md-5">
+        <div class="container">
+            
+            <div class="row mb-3 mb-sm-4">
+                <div class="col-12 mx-auto text-center">
+                    <h2 class="h1"><a href="/galleries">Фотоальбом</a></h2>
+                </div>
+            </div>
+    
+            <div class="row g-4 justify-content-between">
+                
+                    
+
+            </div> 
+        </div>
+    </section>
+
     </main>
     
    
@@ -403,19 +434,17 @@
             <div class="row g-4">
     
                 
-                <div class="col-lg-3">
+                <div class="col-lg-3 text-center">
                     
                     <a class="me-0" href="index.html">
-                        <img class="light-mode-item h-40px" src="/images/logo.png" alt="logo">
-                        <img class="dark-mode-item h-40px" src="/images/logo-light.png" alt="logo">
+                        <img class="h-120px" src="/images/logo.png" alt="logo">
                     </a>
-                    <p class="my-3">Государственное учреждение образования "Гимназия № 51 г. Гомеля"</p>
                     
                     <ul class="list-inline mb-0 mt-3">
-                        <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-facebook" href="#"><i class="fab fa-fw fa-facebook-f"></i></a> </li>
-                        <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-instagram" href="#"><i class="fab fa-fw fa-instagram"></i></a> </li>
-                        <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-twitter" href="#"><i class="fab fa-fw fa-twitter"></i></a> </li>
-                        <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-linkedin" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
+                        <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-instagram" href="https://www.youtube.com/channel/UCVqkUz7CF19EY8XELg2YJ9w"><i class="fab fa-fw fa-youtube"></i></a> </li>
+                        <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-instagram" href="https://www.instagram.com/gimn51gomel"><i class="fab fa-fw fa-instagram"></i></a> </li>
+                        <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-instagram" href="https://t.me/s/gimn51gomel"><i class="fab fa-fw fa-telegram"></i></a> </li>
+                        <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-instagram" href="https://www.tiktok.com/@gimn51gomel"><i class="fab fa-fw fa-tiktok"></i></a> </li>
                     </ul>
                 </div>
                 
@@ -460,17 +489,6 @@
                     </p>
     
                     <p class="mb-0">246012, Республика Беларусь, г. Гомель, ул. Лазурная, 8</p>
-    
-                    <div class="row g-2 mt-2">
-                        
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-6">
-                            <a href="#"> <img src="assets/images/client/google-play.svg" alt=""> </a>
-                        </div>
-                        
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-6">
-                            <a href="#"> <img src="assets/images/client/app-store.svg" alt="app-store"> </a>
-                        </div>
-                    </div> 
                 </div> 
                 
             </div>
@@ -483,7 +501,8 @@
                 <div class="container px-0">
                     <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-md-left">
                         
-                        <div class="text-primary-hover">Copyrights &copy; 2022</div>
+                        <div class="text-primary-hover">&copy; 2022</div>
+                        <p class="">Государственное учреждение образования "Гимназия № 51 г. Гомеля"</p>
                         
                         <div class="justify-content-center mt-3 mt-lg-0">
                             <ul class="nav list-inline justify-content-center mb-0">
@@ -495,11 +514,11 @@
                                         </a>
                                         <ul class="dropdown-menu min-w-auto" aria-labelledby="languageSwitcher">
                                             
-                                            <li><a class="dropdown-item me-4" href="http://example.org/ru/"><img class="fa-fw me-2" src="assets/images/flags/%d0%a0%d1%83%d1%81%d1%81%d0%ba%d0%b8%d0%b9.svg" alt="">Русский</a></li>
+                                            <li><a class="dropdown-item me-4" href="http://example.org/">Русский</a></li>
                                             
-                                            <li><a class="dropdown-item me-4" href="http://example.org/by/"><img class="fa-fw me-2" src="assets/images/flags/%d0%91%d0%b5%d0%bb%d0%b0%d1%80%d1%83%d1%81%d0%ba%d0%b0%d1%8f.svg" alt="">Беларуская</a></li>
+                                            <li><a class="dropdown-item me-4" href="http://example.org/by/">Беларуская</a></li>
                                             
-                                            <li><a class="dropdown-item me-4" href="http://example.org/"><img class="fa-fw me-2" src="assets/images/flags/English.svg" alt="">English</a></li>
+                                            <li><a class="dropdown-item me-4" href="http://example.org/en/">English</a></li>
                                             
                                         </ul>
                                     </div>

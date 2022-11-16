@@ -19700,7 +19700,6 @@ textarea.form-control-lg {
     z-index: 1100 !important;
   }
   .navbar-expand-xl .navbar-brand .navbar-brand-item {
-    height: 36px;
     display: block;
     width: auto;
   }
@@ -22790,6 +22789,10 @@ html[dir=rtl] .choices__input {
 }
 .ql-snow .ql-stroke {
   stroke: #a1a1a8;
+}
+
+footer {
+  background-color:rgba(20, 20, 20);
 }
 
 /*User CSS*/
