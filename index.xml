@@ -26,6 +26,24 @@
     </item>
     
     <item>
+      <title>Администрация гимназии</title>
+      <link>http://example.org/about/administration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/about/administration/</guid>
+      <description>риолдр</description>
+    </item>
+    
+    <item>
+      <title>В помощь учителю</title>
+      <link>http://example.org/metodical/teachers_supports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/metodical/teachers_supports/</guid>
+      <description>Чек лист </description>
+    </item>
+    
+    <item>
       <title>Расписание звонков</title>
       <link>http://example.org/education/bellschedule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

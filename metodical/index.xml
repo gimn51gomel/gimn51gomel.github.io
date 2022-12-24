@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-RU</language><atom:link href="http://example.org/metodical/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>В помощь учителю</title>
+      <link>http://example.org/metodical/teachers_supports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/metodical/teachers_supports/</guid>
+      <description>Чек лист </description>
+    </item>
+    
+    <item>
       <title>Цели и задачи гимназии Государственного учреждения образования &#34;Гимназия № 51 г. Гомеля&#34; на 2022/2023 учебный год</title>
       <link>http://example.org/metodical/goals_and_objectives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
