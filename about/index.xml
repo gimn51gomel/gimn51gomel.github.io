@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on Гимназия 51</title>
-    <link>http://example.org/about/</link>
+    <link>https://gimn51gomel.github.io/about/</link>
     <description>Recent content in Abouts on Гимназия 51</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru-RU</language><atom:link href="http://example.org/about/index.xml" rel="self" type="application/rss+xml" />
+    <language>ru-RU</language><atom:link href="https://gimn51gomel.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Администрация гимназии</title>
-      <link>http://example.org/about/administration/</link>
+      <link>https://gimn51gomel.github.io/about/administration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/about/administration/</guid>
+      <guid>https://gimn51gomel.github.io/about/administration/</guid>
       <description>риолдр</description>
     </item>
     
