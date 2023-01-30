@@ -20980,11 +20980,35 @@ html[dir=rtl] .choices__input {
 }
 
 /*User CSS*/
-table, th, td {
-  border: 1px solid;
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1em;
+  min-width: 400px;
+  -webkit-box-shadow: 0 0 20px 0 0.125rem 0.25rem rgba(29, 58, 83, 0.15);
+          box-shadow: 0 0 20px 0 0.125rem 0.25rem rgba(29, 58, 83, 0.15);
 }
 
-.content {
-  font-size: 3em;
+thead tr {
+  background-color: rgba(36, 41, 45, 0.075);
+  color: #24292d;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px 15px;
+}
+
+tbody tr {
+  border-bottom: 1px solid rgba(36, 41, 45, 0.075);
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: rgba(36, 41, 45, 0.075);
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #1d3b53;
 }
 /*# sourceMappingURL=style.css.map */

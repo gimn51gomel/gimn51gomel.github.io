@@ -27,6 +27,7 @@ Table Of Content
 25 PRICING
 26 STICKY ELEMENT
 27 OVERLAY SCROLLBARS
+28 UNIVERSAL FUNCTIONS
 ====================== */
 
 "use strict";
@@ -103,7 +104,8 @@ var e = {
         e.videoPlyr(),
         e.darkMode(),
         e.stickyElement(),
-        e.overlayScrollbars();
+        e.overlayScrollbars(),
+        e.universalMode();
         
     },
     isVariableDefined: function (el) {
@@ -1055,8 +1057,32 @@ var e = {
           });
         });
       }
-    }
+    },
     // END: Overlay scrollbars
+
+    // START: 24 Dark mode
+    universalMode: function () {
+
+      let theme = localStorage.getItem('data-theme');
+      var style = document.getElementById("style-switch");
+      var dir = document.getElementsByTagName("html")[0].getAttribute('dir');
+
+      var changeThemeToUniversal = () => {
+        document.documentElement.setAttribute("data-theme", "universal") // set theme to dark
+        style.setAttribute('href', '/css/style-universal.css');
+        localStorage.setItem("data-theme", "universal") // save theme to local storage
+      }
+
+
+      const dms = e.select('#universalModeSwitch');
+      if (e.isVariableDefined(dms)) {
+          dms.addEventListener('click', () => {
+            let theme = localStorage.getItem('data-theme'); // Retrieve saved them from local storage
+            changeThemeToUniversal();
+          });
+      }
+  }
+  // END: Dark mode
 
 };
 e.init();
