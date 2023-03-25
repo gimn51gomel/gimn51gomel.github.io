@@ -1,3 +1,11 @@
+/**
+* Eduport- LMS, Education and Course Theme
+*
+* @author Webestica (https://www.webestica.com/)
+* @version 1.4.0
+**/
+
+
 /* ===================
 Table Of Content
 ======================
@@ -9,25 +17,24 @@ Table Of Content
 06 TOOLTIP
 07 POPOVER
 08 BACK TO TOP
-10 GLIGHTBOX
-11 ISOTOPE
-12 CHOICES
-13 AOS ANIMATION
-14 DASHBOARD CHART
-15 EARNING CHART
-16 EARNING CHART 2
-17 TRAFFIC CHART
-18 ACTIVE STUDENT CHART
-19 ACTIVE STUDENT CHART 2
-20 REVIEW CHART
-21 QUILL EDITOR
-22 STEPPER
-23 VIDEO PLAYER
-24 DARK MODE
-25 PRICING
-26 STICKY ELEMENT
-27 OVERLAY SCROLLBARS
-28 UNIVERSAL FUNCTIONS
+09 GLIGHTBOX
+10 ISOTOPE
+11 CHOICES
+12 AOS ANIMATION
+13 DASHBOARD CHART
+14 EARNING CHART
+15 EARNING CHART 2
+16 TRAFFIC CHART
+17 ACTIVE STUDENT CHART
+18 ACTIVE STUDENT CHART 2
+19 REVIEW CHART
+20 QUILL EDITOR
+21 STEPPER
+22 VIDEO PLAYER
+23 PRICING
+24 STICKY ELEMENT
+24 OVERLAY SCROLLBARS
+26 FLATPICKER
 ====================== */
 
 "use strict";
@@ -102,10 +109,10 @@ var e = {
         e.quill(),
         e.stepper(),
         e.videoPlyr(),
-        e.darkMode(),
+        e.pricing(),
         e.stickyElement(),
         e.overlayScrollbars(),
-        e.universalMode();
+        e.flatPicker();
         
     },
     isVariableDefined: function (el) {
@@ -454,7 +461,7 @@ var e = {
     },
     // END: Back to Top
 
-    // START: 10 GLightbox
+    // START: 09 GLightbox
     lightBox: function () {
         var light = e.select('[data-glightbox]');
         if (e.isVariableDefined(light)) {
@@ -467,7 +474,7 @@ var e = {
     },
     // END: GLightbox
 
-    // START: 11 Isotope
+    // START: 10 Isotope
     enableIsotope: function () {
         var isGridItem = e.select('.grid-item');
         if (e.isVariableDefined(isGridItem)) {
@@ -527,7 +534,7 @@ var e = {
     },
     // END: Isotope
 
-    // START: 12 Choices
+    // START: 11 Choices
     choicesSelect: function () {
        var choice = e.select('.js-choice');
        
@@ -554,7 +561,7 @@ var e = {
     },
     // END: Choices
 
-    // START: 13 AOS Animation
+    // START: 12 AOS Animation
     aosFunc: function () {
         var aos = e.select('.aos');
         if (e.isVariableDefined(aos)) {
@@ -567,7 +574,7 @@ var e = {
     },
     // END: AOS Animation
 
-    // START: 14 Dashboard Chart
+    // START: 13 Dashboard Chart
     dashboardChart: function () {
         var ac = e.select('#ChartPayout');
         if (e.isVariableDefined(ac)) {
@@ -628,7 +635,7 @@ var e = {
     },
     // END: Dashboard Chart
 
-    // START: 15 Earning Chart
+    // START: 14 Earning Chart
     earningChart: function () {
         var cpe = e.select('#ChartPayoutEarning');
         if (e.isVariableDefined(cpe)) {
@@ -677,7 +684,7 @@ var e = {
     },
     // END: Earning Chart
 
-    // START: 16 Earning Chart 2
+    // START: 15 Earning Chart 2
     earningChart2: function () {
         var cpv = e.select('#ChartPageViews');
         if (e.isVariableDefined(cpv)) {
@@ -723,7 +730,7 @@ var e = {
     },
     // END: Earning Chart 2
 
-    // START: 17 Traffic Chart 2
+    // START: 16 Traffic Chart
     trafficChart: function () {
       var cpv = e.select('#ChartTrafficViews');
       if (e.isVariableDefined(cpv)) {
@@ -766,9 +773,9 @@ var e = {
         chart.render();
       }
     },
-    // END: Traffic Chart 2
+    // END: Traffic Chart
 
-    // START: 18 Active student Chart
+    // START: 17 Active student Chart
     activeChart: function () {
       var jj = document.querySelector("#activeChartstudent");
       if(typeof(jj) != 'undefined' && jj != null){
@@ -817,7 +824,7 @@ var e = {
     },
     // END: Active student Chart
 
-    // START: 19 Active student Chart 2
+    // START: 18 Active student Chart 2
     activeChart2: function () {
       var jj = document.querySelector("#activeChartstudent2");
       if(typeof(jj) != 'undefined' && jj != null){
@@ -866,7 +873,7 @@ var e = {
     },
     // END: Active student Chart 2
 
-    // START: 20 Review chart START
+    // START: 19 Review chart
     reviewChart: function (){
       var ff = document.querySelector("#apexChartPageViews");
       if(typeof(ff) != 'undefined' && ff != null){
@@ -908,9 +915,9 @@ var e = {
       chart.render();
       }
     },
-    // END: Review chart END
+    // END: Review chart
 
-    // START: 21 Quill Editor
+    // START: 20 Quill Editor
     quill: function () {
         var ql = e.select('#quilleditor');
         if (e.isVariableDefined(ql)) {
@@ -922,7 +929,7 @@ var e = {
     },
     // END: Quill Editor
 
-    // START: 22 Stepper
+    // START: 21 Stepper
     stepper: function () {
         var stp = e.select('#stepper');
         if (e.isVariableDefined(stp)) {
@@ -949,7 +956,7 @@ var e = {
     },
     // END: Stepper
 
-    // START: 23 Video player
+    // START: 22 Video player
     videoPlyr: function () {
         var vdp = e.select('.video-player');
         if (e.isVariableDefined(vdp)) {
@@ -975,48 +982,36 @@ var e = {
         }
     },
     // END: Video player
-    
-    // START: 24 Dark mode
-    darkMode: function () {
 
-        let theme = localStorage.getItem('data-theme');
-        var style = document.getElementById("style-switch");
-        var dir = document.getElementsByTagName("html")[0].getAttribute('dir');
+    // START: 23 Pricing
+    pricing: function () {
+        var p = e.select('.price-wrap');
+        if (e.isVariableDefined(p)) {
+          var pWrap = e.selectAll(".price-wrap");
+          pWrap.forEach(item => {
 
-        var changeThemeToDark = () => {
-          document.documentElement.setAttribute("data-theme", "dark") // set theme to dark
-          style.setAttribute('href', '/css/style-dark.css');
-          localStorage.setItem("data-theme", "dark") // save theme to local storage
-        }
+            var priceSwitch = item.querySelector('.price-toggle'),
+            priceElement = item.querySelectorAll('.plan-price');
 
-        var changeThemeToLight = () => {
-          document.documentElement.setAttribute("data-theme", "light") // set theme light
-          style.setAttribute('href', '/css/style.css');
-          
-          localStorage.setItem("data-theme", 'light') // save theme to local storage
-        }
-
-        if(theme === 'dark'){
-          changeThemeToDark()
-        } else if (theme == null || theme === 'light' ) {
-          changeThemeToLight();
-        }
-
-        const dms = e.select('#darkModeSwitch');
-        if (e.isVariableDefined(dms)) {
-            dms.addEventListener('click', () => {
-              let theme = localStorage.getItem('data-theme'); // Retrieve saved them from local storage
-              if (theme ==='dark'){
-                  changeThemeToLight()
-              } else{
-                  changeThemeToDark()
+            priceSwitch.addEventListener('change', function () {
+              if (priceSwitch.checked) {
+                priceElement.forEach(pItem => {
+                  var dd = pItem.getAttribute('data-annual-price');
+                  pItem.innerHTML = dd;
+                });
+              } else {
+                priceElement.forEach(pItem => {
+                  var ee = pItem.getAttribute('data-monthly-price');
+                  pItem.innerHTML = ee;
+                });
               }
             });
+          });
         }
     },
-    // END: Dark mode
+    // END: Pricing
 
-    // START: 26 Sticky element
+    // START: 24 Sticky element
     stickyElement: function () {
     var scrollpos = window.scrollY;
     var sp = e.select('.sticky-element');
@@ -1035,9 +1030,8 @@ var e = {
     }
     },
     // END: Sticky element
-
  
-    // START: 27 Overlay scrollbars
+    // START: 25 Overlay scrollbars
     overlayScrollbars: function () {
       var os = e.select('.custom-scrollbar');
       if (os) {
@@ -1060,29 +1054,34 @@ var e = {
     },
     // END: Overlay scrollbars
 
-    // START: 24 Dark mode
-    universalMode: function () {
+    // START: 26 Flatpicker
+    flatPicker: function () {
 
-      let theme = localStorage.getItem('data-theme');
-      var style = document.getElementById("style-switch");
-      var dir = document.getElementsByTagName("html")[0].getAttribute('dir');
+      var picker = e.select('.flatpickr');
+      if (e.isVariableDefined(picker)) {
+        var element = e.selectAll('.flatpickr');
+        element.forEach(function (item) {
+          var mode = item.getAttribute('data-mode') == 'multiple' ? 'multiple' : item.getAttribute('data-mode') == 'range' ? 'range' : 'single';
+          var enableTime = item.getAttribute('data-enableTime') == 'true' ? true : false;
+          var noCalendar = item.getAttribute('data-noCalendar') == 'true' ? true : false;
+          var inline = item.getAttribute('data-inline') == 'true' ? true : false;
+          var dateFormat = item.getAttribute('data-date-format') ? item.getAttribute('data-date-format') : item.getAttribute('data-enableTime') == 'true' ? "h:i K" : "d M";
 
-      var changeThemeToUniversal = () => {
-        document.documentElement.setAttribute("data-theme", "universal") // set theme to dark
-        style.setAttribute('href', '/css/style-universal.css');
-        localStorage.setItem("data-theme", "universal") // save theme to local storage
-      }
-
-
-      const dms = e.select('#universalModeSwitch');
-      if (e.isVariableDefined(dms)) {
-          dms.addEventListener('click', () => {
-            let theme = localStorage.getItem('data-theme'); // Retrieve saved them from local storage
-            changeThemeToUniversal();
+          flatpickr(item, {
+            mode: mode,
+            enableTime: enableTime,
+            noCalendar: noCalendar,
+            inline: inline,
+            animate: "false",
+            position: "top",
+            dateFormat: dateFormat, //Check supported characters here: https://flatpickr.js.org/formatting/
+            disableMobile: "true"
           });
+
+        });
       }
-  }
-  // END: Dark mode
+    },
+    // END: Flatpicker
 
 };
 e.init();
