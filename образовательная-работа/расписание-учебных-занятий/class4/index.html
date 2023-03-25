@@ -100,6 +100,13 @@
             currentFont.setAttribute('checked', '');
         }
 
+        var accessibilityPanel = document.getElementById('accessibility-panel');
+        accessibilityPanel.addEventListener('show.bs.collapse', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        });
     });
 </script>
 

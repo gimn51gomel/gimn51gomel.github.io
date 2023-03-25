@@ -100,6 +100,13 @@
             currentFont.setAttribute('checked', '');
         }
 
+        var accessibilityPanel = document.getElementById('accessibility-panel');
+        accessibilityPanel.addEventListener('show.bs.collapse', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        });
     });
 </script>
 
@@ -281,7 +288,7 @@
     <div class="navbar navbar-top navbar-dark bg-light py-2 mx-2 mx-md-4 rounded-bottom-4">
         <div class="d-lg-flex justify-content-lg-between align-items-center">
             <div class="nav-item"><img src="/images/rb.png" alt="rb.png" /></div>
-            <div class="nav-item"><h2 class=""><a href="/">State educational institution<br/>&laquo;Gymnasium №51 of Gomel&raquo;</a></h2></div>
+            <div class="nav-item"><h2 class=""><a href="/">State educational institution<br/>&laquo;Gimnasium 51&raquo;</a></h2></div>
         </div>
     </div>
     <div id="content">
@@ -480,7 +487,7 @@
                     <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-md-left">
                         
                         <div class="text-primary-hover">&copy; 2022</div>
-                        <p class="">State educational institution &laquo;Gymnasium №51 of Gomel&raquo;</p>
+                        <p class="">State educational institution &laquo;Gimnasium 51&raquo;</p>
                         
                         <div class="justify-content-center mt-3 mt-lg-0">
                             <ul class="nav list-inline justify-content-center mb-0">
