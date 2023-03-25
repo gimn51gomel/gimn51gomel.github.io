@@ -60,7 +60,47 @@
 
         }
     })
-    
+</script>
+
+<script>
+    const doc = document.documentElement;
+    const storedAccessibilityFont = localStorage.getItem('accessibilityFont');
+    const getPreferredFont = () => {
+        if (storedAccessibilityFont) {
+            return storedAccessibilityFont
+        }
+        return 'font-default'
+    }
+    const setFont = function(font) {
+        if (font == 'font-sm') {
+            doc.classList.remove('font-lg');
+            doc.classList.add('font-sm');
+          } else if(font == 'font-default') {
+            doc.classList.remove('font-sm','font-lg');
+          } else if(font == 'font-lg') {
+            doc.classList.remove('font-sm');
+            doc.classList.add('font-lg');
+          }
+    }
+
+    setFont(getPreferredFont());
+
+    window.addEventListener('DOMContentLoaded', () => {
+        var radios = document.querySelectorAll('input[type=radio][name="fntradio"]');
+        radios.forEach(radio => {
+          radio.addEventListener("change", function() {
+              var font = radio.getAttribute('id');
+              localStorage.setItem('accessibilityFont', font)
+              setFont(font);
+          });
+        });
+
+        var currentFont = document.getElementById(getPreferredFont());
+        if (currentFont) {
+            currentFont.setAttribute('checked', '');
+        }
+
+    });
 </script>
 
 <link rel="shortcut icon" href="/images/favicon.ico">
@@ -78,7 +118,23 @@
 
 <link id="style-switch" rel="stylesheet" type="text/css" href="/css/style.css">
 
-<body>    
+<body><div class="collapse" id="accessibility-panel">
+    <div class="form-check bg-light">
+      <div class="form-group">
+        <strong>Шрифт</strong>
+        <div class="btn-group me-3" role="group" aria-label="font size changer">
+            <input type="radio" class="btn-check" name="fntradio" id="font-sm">
+            <label class="btn btn-outline-primary mb-0" for="font-sm">A&minus;</label>
+
+            <input type="radio" class="btn-check" name="fntradio" id="font-default">
+            <label class="btn btn-outline-primary mb-0" for="font-default">A</label>
+
+            <input type="radio" class="btn-check" name="fntradio" id="font-lg">
+            <label class="btn btn-outline-primary mb-0 " for="font-lg">A&plus;</label>
+        </div>
+      </div>
+    </div>
+</div>    
     <header class="navbar-light navbar-sticky header-static">
         
         <nav class="navbar navbar-expand-xl">
@@ -173,7 +229,7 @@
                         </ul>
                     </div>
 
-                    <div class="btn btn-lg btn-danger-soft me-4 mb-4 mb-sm-0" id="universalModeSwitch"><i class="fas fa-universal-access me-2"></i>For visually impaired</div>
+                    <div class="btn btn-lg btn-danger-soft me-4 mb-4 mb-sm-0" id="universalModeSwitch" data-bs-toggle="collapse" data-bs-target="#accessibility-panel"><i class="fas fa-universal-access me-2"></i>For visually impaired</div>
 
                     <div class="dropdown">
                         <button class="btn btn-light btn-sm lh-1 p-2 mb-0" id="bd-theme"
@@ -225,7 +281,7 @@
     <div class="navbar navbar-top navbar-dark bg-light py-2 mx-2 mx-md-4 rounded-bottom-4">
         <div class="d-lg-flex justify-content-lg-between align-items-center">
             <div class="nav-item"><img src="/images/rb.png" alt="rb.png" /></div>
-            <div class="nav-item"><h2 class=""><a href="/">State educational institution<br/>&laquo;Gimnasium 51&raquo;</a></h2></div>
+            <div class="nav-item"><h2 class=""><a href="/">State educational institution<br/>&laquo;Gymnasium №51 of Gomel&raquo;</a></h2></div>
         </div>
     </div>
     <div id="content">
@@ -334,7 +390,7 @@
                     <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-md-left">
                         
                         <div class="text-primary-hover">&copy; 2022</div>
-                        <p class="">State educational institution &laquo;Gimnasium 51&raquo;</p>
+                        <p class="">State educational institution &laquo;Gymnasium №51 of Gomel&raquo;</p>
                         
                         <div class="justify-content-center mt-3 mt-lg-0">
                             <ul class="nav list-inline justify-content-center mb-0">

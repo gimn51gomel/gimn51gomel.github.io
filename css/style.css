@@ -22308,4 +22308,28 @@ tbody tr:nth-of-type(even) {
 tbody tr:last-of-type {
   border-bottom: 2px solid #1d3b53;
 }
+
+html.font-lg {
+  font-size: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 1400px) {
+  html.font-lg .container {
+    max-width: 1300px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+html.font-sm {
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#accessibility-panel.show {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
 /*# sourceMappingURL=style.css.map */
