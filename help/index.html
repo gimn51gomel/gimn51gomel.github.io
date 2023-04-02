@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru-RU"><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Руководсво использования HUGO | </title>
+<title>Help | </title>
 <meta name="viewport" content="width=device-width,minimum-scale=1">
 
 <script>
@@ -124,8 +124,7 @@
 <link rel="stylesheet" type="text/css" href="/vendor/glightbox/css/glightbox.css">
 
 <link id="style-switch" rel="stylesheet" type="text/css" href="/css/style.css">
-
-<body><div class="collapse" id="accessibility-panel">
+<script src="/js/yatranslate.js"></script><body><div class="collapse" id="accessibility-panel">
     <div class="form-check bg-light">
       <div class="form-group">
         <strong>Шрифт</strong>
@@ -434,8 +433,17 @@
                                 </li>
                                 
                                 <li> 
+                                    <a class="dropdown-item" href="/calendar/">
+                                        <i class="text-warning fa-fw bi fa fa-calendar me-2"></i>События
+                                    </a>
+
+                                    
+
+                                </li>
+                                
+                                <li> 
                                     <a class="dropdown-item active" href="/help/">
-                                        <i class="text-warning fa-fw bi fa fa-newspaper me-2"></i>Помощь
+                                        <i class="text-warning fa-fw bi fa fa-school me-2"></i>Help
                                     </a>
 
                                     
@@ -445,6 +453,7 @@
                             </ul>
                         </li>
                     </ul>
+
                     
                     <div class="dropdown nav me-4">
                         <a class="dropdown-toggle nav-link" href="#" role="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false">
@@ -452,11 +461,11 @@
                         </a>
                         <ul class="dropdown-menu min-w-auto" aria-labelledby="languageSwitcher">
                             
-                            <li><a class="dropdown-item me-4" href="https://gimn51gomel.github.io/">Русский</a></li>
+                            <li><a class="dropdown-item me-4" href="#" data-ya-lang="ru data-google-lang=ru">Русский</a></li>
                             
-                            <li><a class="dropdown-item me-4" href="https://gimn51gomel.github.io/by/">Беларуская</a></li>
+                            <li><a class="dropdown-item me-4" href="#" data-ya-lang="by data-google-lang=by">Беларуская</a></li>
                             
-                            <li><a class="dropdown-item me-4" href="https://gimn51gomel.github.io/en/">English</a></li>
+                            <li><a class="dropdown-item me-4" href="#" data-ya-lang="en data-google-lang=en">English</a></li>
                             
                         </ul>
                     </div>
@@ -511,9 +520,9 @@
     </header><div id="sticky-space"></div>
 
     <div class="navbar navbar-top navbar-dark bg-light py-2 mx-2 mx-md-4 rounded-bottom-4">
-        <div class="d-lg-flex justify-content-lg-between align-items-center">
-            <div class="nav-item"><img src="/images/rb.png" alt="rb.png" /></div>
-            <div class="nav-item"><h2 class=""><a href="/">Государственное учреждение образования<br/>&laquo;Гимназия №51 г. Гомеля&raquo;</a></h2></div>
+        <div class="d-flex justify-content-lg-between align-items-center">
+            <div class="nav-item"><img src="/images/rb.png" class="mx-auto d-block" alt="rb.png" /></div>
+            <div class="nav-item"><h2 class=""><a href="/"><span class="fs-4">Государственное учреждение образования</span><br/>&laquo;Гимназия №51 г. Гомеля&raquo;</a></h2></div>
         </div>
     </div>
     <div id="content">
@@ -533,18 +542,37 @@
 		<div class="row mb-3 mb-sm-4">
 			<div class="col-12 mx-auto text-center">
 				<h2 class="fs-1 fw-bold">
-					<span class="position-relative z-index-9">Руководсво использования HUGO</span>
+					<span class="position-relative z-index-9">Help</span>
 				</h2>
 			</div>
 		</div>
 		<div class="row mb-3 mb-sm-4">
 			<div class="col-12 mx-auto">
                 <article id="content">
-                    <div class="fs-5 float-left"><pre tabindex="0"><code class="language-markmap" data-lang="markmap">- Hugo Modules
-  - wowchemy
-  - wowchemy-plugins-netlify
-  - wowchemy-plugins-netlify-cms
-  - wowchemy-plugins-reveal
+                    <div class="fs-5 float-left"><h2 id="заголовки">Заголовки</h2>
+<p>Для создания заголовков в <code>Markdown</code> используйте знак решетки <code>#</code> перед текстом заголовка. Можно использовать от одного до шести знаков &ldquo;#&rdquo;, чтобы создать шесть уровней заголовков.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span># Заголовок первого уровня
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Заголовок второго уровня
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">### Заголовок третьего уровня
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#### Заголовок четвертого уровня
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">##### Заголовок пятого уровня
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">###### Заголовок шестого уровня
+</span></span></span></code></pre></div><h1 id="форматирование-текста">Форматирование текста</h1>
+<p>В <code>Markdown</code> для можно форматировать текст, используя следующие теги:</p>
+<p>Жирный текст: используйте двойную звездочку <code>**</code> или двойное подчеркивание <code>__</code> для выделения текста жирным шрифтом.
+Курсивный текст: используйте одну звездочку &ldquo;*&rdquo; или одно подчеркивание &ldquo;_&rdquo; для выделения текста курсивным шрифтом.
+Зачеркнутый текст: используйте две тильды &ldquo;~~&rdquo; для выделения текста зачеркнутым шрифтом.</p>
+<p>Примеры:</p>
+<p><strong>Жирный текст</strong></p>
+<pre tabindex="0"><code>**Жирный текст**
+</code></pre><p><strong>Жирный текст</strong></p>
+<pre tabindex="0"><code>__Жирный текст__
+</code></pre><p><em>Курсивный текст</em></p>
+<pre tabindex="0"><code>*Курсивный текст*
+</code></pre><p><em>Курсивный текст</em></p>
+<pre tabindex="0"><code>_Курсивный текст_
+</code></pre><p><del>Зачеркнутый текст</del></p>
+<pre tabindex="0"><code>~~Зачеркнутый текст~~
 </code></pre></div>
                 </article>
 			</div>
@@ -586,6 +614,15 @@
                             <ul class="nav flex-column">
                                 
                                 <li class="nav-item"><a class="nav-link" href="/about/administration/">Администрация</a></li>
+                                
+                            </ul>
+                        </div>
+                        
+                        
+                        
+                        <div class="col-6 col-md-4">
+                            <h5 class="mb-2 mb-md-4">Help</h5>
+                            <ul class="nav flex-column">
                                 
                             </ul>
                         </div>
