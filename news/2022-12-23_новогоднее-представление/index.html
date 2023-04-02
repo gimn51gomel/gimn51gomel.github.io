@@ -145,14 +145,15 @@
     <header class="navbar-light navbar-sticky header-static">
         
         <nav class="navbar navbar-expand-xl">
-            <div class="container-fluid px-3 px-xl-5">
+            <div class="container-fluid">
                 
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-animation">
                         <span></span>
                         <span></span>
                         <span></span>
                     </span>
+                    <span class="text-body small d-none d-sm-inline-block ms-2">Меню</span>
                 </button>
     
                 
@@ -454,9 +455,9 @@
                             </ul>
                         </li>
                     </ul>
-
+                </div>
                     
-                    <div class="dropdown nav me-4">
+                    <div class="nav-item  position-relative dropdown nav me-4">
                         <a class="dropdown-toggle nav-link" href="#" role="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-globe me-2"></i>Язык
                         </a>
@@ -471,9 +472,7 @@
                         </ul>
                     </div>
 
-                    <div class="btn btn-lg btn-danger-soft me-4 mb-4 mb-sm-0" id="universalModeSwitch" data-bs-toggle="collapse" data-bs-target="#accessibility-panel"><i class="fas fa-universal-access me-2"></i>Для слабовидящих</div>
-
-                    <div class="dropdown">
+                    <div class="navbar-item dropdown me-4">
                         <button class="btn btn-light btn-sm lh-1 p-2 mb-0" id="bd-theme"
                         type="button"
                         aria-expanded="false"
@@ -513,7 +512,11 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+
+                    <div class="navbar-nav d-lg-inline-block me-4">
+                        <button class="btn btn-danger-soft mb-0" id="universalModeSwitch" data-bs-toggle="collapse" data-bs-target="#accessibility-panel"><i class="fas fa-universal-access fs-3"></i></button>
+                    </div>
+                
                 
             </div>
         </nav>
