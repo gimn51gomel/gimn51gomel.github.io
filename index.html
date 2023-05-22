@@ -186,7 +186,7 @@
                                     <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
                                         
                                         <li>
-                                            <a class="dropdown-item" href="/%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D1%85-%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B9/class1/">
+                                            <a class="dropdown-item" href="/%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D1%85-%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B9/class1/iindex/">
                                                 <i class="text-warning fa-fw bi  me-2"></i>1 классы
                                             </a>
                                         </li>
@@ -1334,6 +1334,55 @@
             </div>
         </section>
     
+
+    <section class="pt-0 pt-md-5"><script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js'></script>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        events: function(fetchInfo, successCallback, failureCallback) {
+            var xhr = new XMLHttpRequest();
+
+            var year = fetchInfo.start.getFullYear()
+            var month = fetchInfo.start.getMonth() + 1
+            var day = fetchInfo.start.getDate()
+            if (day > 1) {
+              month++
+            }
+            var file = '/events/' + year + '-' + month + '/index.json';
+            xhr.open('GET', file);
+            xhr.onload = function() {
+              var eventData = JSON.parse(xhr.responseText)
+              if (xhr.status === 200) {
+                successCallback(
+                    Array.prototype.slice.call(
+                    eventData.events
+                  ).map(function(eventEl) {
+                    return {
+                      title: eventEl.title,
+                      start: eventEl.start,
+                      url: eventEl.url
+                    }
+                  })
+                );
+              } else {
+                console.error(error);
+                failureCallback(error);
+              }
+            };
+            xhr.send();
+        }
+      });
+      calendar.render();
+    });
+
+  </script>
+
+  <div id='calendar'></div></section>
+
     </main>
     
 

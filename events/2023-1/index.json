@@ -1,0 +1,101 @@
+{
+    "events": [
+        
+        
+        {
+            "title": "Test13",
+            "start": "2023-01-13",
+            "url": "https://gimn51gomel.github.io/news/2023-01-13_test13/",
+            "allDay": true
+        }
+        
+        ,
+        {
+            "title": "Test12",
+            "start": "2023-01-12",
+            "url": "https://gimn51gomel.github.io/news/2023-01-12_test12/",
+            "allDay": true
+        }
+        
+        ,
+        {
+            "title": "Test11",
+            "start": "2023-01-11",
+            "url": "https://gimn51gomel.github.io/news/2023-01-11_test11/",
+            "allDay": true
+        }
+        
+        ,
+        {
+            "title": "Test10",
+            "start": "2023-01-10",
+            "url": "https://gimn51gomel.github.io/news/2023-01-10_test10/",
+            "allDay": true
+        }
+        
+        ,
+        {
+            "title": "Test9",
+            "start": "2023-01-09",
+            "url": "https://gimn51gomel.github.io/news/2023-01-09_test9/",
+            "allDay": true
+        }
+        
+        ,
+        {
+            "title": "Test8",
+            "start": "2023-01-08",
+            "url": "https://gimn51gomel.github.io/news/2023-01-08_test8/",
+            "allDay": true
+        }
+        
+        ,
+        {
+            "title": "Test7",
+            "start": "2023-01-07",
+            "url": "https://gimn51gomel.github.io/news/2023-01-07_test7/",
+            "allDay": true
+        }
+        
+        ,
+        {
+            "title": "Test6",
+            "start": "2023-01-06",
+            "url": "https://gimn51gomel.github.io/news/2023-01-06_test6/",
+            "allDay": true
+        }
+        
+        ,
+        {
+            "title": "Test5",
+            "start": "2023-01-05",
+            "url": "https://gimn51gomel.github.io/news/2023-01-05_test5/",
+            "allDay": true
+        }
+        
+        ,
+        {
+            "title": "Test4",
+            "start": "2023-01-04",
+            "url": "https://gimn51gomel.github.io/news/2023-01-04_test4/",
+            "allDay": true
+        }
+        
+        ,
+        {
+            "title": "Test3",
+            "start": "2023-01-03",
+            "url": "https://gimn51gomel.github.io/news/2023-01-02_test3/",
+            "allDay": true
+        }
+        
+        ,
+        {
+            "title": "Test1",
+            "start": "2023-01-01",
+            "url": "https://gimn51gomel.github.io/news/2023-01-01_test1/",
+            "allDay": true
+        }
+        
+    ]
+}
