@@ -1345,37 +1345,50 @@
         locale: 'ru',
         initialView: 'dayGridMonth',
         themeSystem: 'bootstrap5',
+        firstDay: 1,
+
         events: function(fetchInfo, successCallback, failureCallback) {
             var xhr = new XMLHttpRequest();
 
-            var year = fetchInfo.start.getFullYear()
-            var month = fetchInfo.start.getMonth() + 1
-            var day = fetchInfo.start.getDate()
-            if (day > 1) {
-              month++
+            var startDay = fetchInfo.start;
+            var endDay = fetchInfo.end;
+
+            
+            var mounths = [];
+            var loop = startDay;
+            while(loop <= endDay){
+              var mounth = loop.getMonth() + 1;
+              var year = loop.getFullYear();
+              mounths.push(year + '-' + mounth);
+              var newMonth = loop.setMonth(loop.getMonth() + 1);
+              loop = new Date(newMonth);
             }
-            var file = '/events/' + year + '-' + month + '/index.json';
-            xhr.open('GET', file);
-            xhr.onload = function() {
-              var eventData = JSON.parse(xhr.responseText)
-              if (xhr.status === 200) {
-                successCallback(
-                    Array.prototype.slice.call(
-                    eventData.events
-                  ).map(function(eventEl) {
-                    return {
-                      title: eventEl.title,
-                      start: eventEl.start,
-                      url: eventEl.url
-                    }
-                  })
-                );
-              } else {
-                console.error(error);
-                failureCallback(error);
-              }
-            };
-            xhr.send();
+
+            
+            var events = [];
+            mounths.forEach(function(mounth){
+              var file = '/events/' + mounth + '/index.json';
+              xhr.open('GET', file, false);
+              xhr.onload = function() {
+                if (xhr.status === 200) {
+                  var eventData = JSON.parse(xhr.responseText)
+                  events = events.concat(eventData.events);
+                }
+              };
+              xhr.send();
+            });
+
+            successCallback(
+                Array.prototype.slice.call(
+                events
+              ).map(function(eventEl) {
+                return {
+                  title: eventEl.title,
+                  start: eventEl.start,
+                  url: eventEl.url
+                }
+              })
+            );
         }
       });
       calendar.render();
